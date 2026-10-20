@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #202225;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.table-card {
+    background-color: #000000;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 800px;
+    padding: 24px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #334155;
+}
+
+.table-header-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.table-header-title h2 {
+    color: #f8fafc;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.table-header-title p {
+    background-color: #38bdf8;
+    color: #0f172a;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    border-radius: 12px;
+}
+
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: left;
+    color: #cbd5e1;
+}
+
+.modern-table th {
+    background-color: #0f172a;
+    color: #38bdf8;
+    padding: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #334155;
+}
+
+.modern-table td {
+    padding: 16px;
+    border-bottom: 1px solid #334155;
+    transition: background-color 0.2s ease;
+}
+
+
+.modern-table td.name-cell {
+    color: #f8fafc;
+    font-weight: 500;
+}
+
+.modern-table tbody tr:hover td {
+    background-color: #24334d;
+}
+
+.country-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0f172a;
+    padding: 6px 12px;
+    border-radius: 8px;
+    width: fit-content;
+    border: 1px solid #334155;
+}
+
+.country-badge .flag {
+    width: 18px;
+    height: 13px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.status-checkbox {
+    appearance: none; 
+    width: 18px;
+    height: 18px;
+    border: 2px solid #64748b;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+    background-color: transparent;
+}
+
+.status-checkbox:checked {
+    background-color: #38bdf8;
+    border-color: #38bdf8;
+}
+
+.status-checkbox:checked::before {
+    content: '✓';
+    position: absolute;
+    color: #0f172a;
+    font-size: 12px;
+    font-weight: 900;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flag-emoji {
+    font-size: 18px;  
+    line-height: 1;
+}
